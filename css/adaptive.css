@@ -1,0 +1,42 @@
+@media (max-width: 605px) {
+    .header {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    #main {
+        padding-block: 30px;
+
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .main-content {
+        text-align: center;
+        align-items: center;
+        gap: 15px;
+    }
+    #post {
+        padding-block: 20px;
+    }
+    .post {
+        flex-direction: column;
+    }
+    .post-top {
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .post-top a {
+        display: none;
+    }
+    .post .cart {
+        gap: 8px;
+    }
+    .blog-top {
+        justify-content: center;
+    }
+    .blog {
+        flex-direction: column;
+    }
+}
