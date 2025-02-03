@@ -38,5 +38,15 @@
     }
     .blog {
         flex-direction: column;
+        gap: 12px;
     }
+    .blog-text {
+        gap: 12px;
+    }
+
 }
+/* @media .burger-menu:hover {
+    .menu {
+        display: flex;
+    } */
+/* } */

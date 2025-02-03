@@ -6,8 +6,17 @@
   text-decoration: none;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 #header {
-  padding-block: 20px;
+  /* padding-block: 20px; */
+  top: 0px;
+  position: sticky;
+  padding-block: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 99;
+  
 }
 button {
   font-size: clamp(1rem, 0.833rem + 0.83vw, 1.5rem);
@@ -19,7 +28,7 @@ button {
 p {
   font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
   line-height: 28px;
-    color: #21243D;
+  color: #21243d;
 }
 a {
   font-size: clamp(1rem, 0.833rem + 0.83vw, 1.5rem);
@@ -31,8 +40,9 @@ a {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 40px;
-  @media (max-width: 500px) { 
-  padding-inline: 20px;
+  @media (max-width: 500px) {
+    margin-inline: auto;
+    padding-inline: 10px;
   }
 }
 .header {
@@ -40,21 +50,37 @@ a {
   justify-content: flex-end;
   gap: 30px;
 }
+
+
 .header a {
+  
   font-size: clamp(1rem, 0.833rem + 0.83vw, 1.5rem);
   color: #000000;
   font-weight: 600;
 }
 .burger-menu {
-
   display: none;
   justify-content: flex-end;
 }
 .burger-menu ion-icon {
-  font-size: clamp(0.875rem, 0.542rem + 1.67vw, 1.875rem);
+  font-size: clamp(1.5rem, 1.292rem + 1.04vw, 2.125rem);
+}
+.burger-menu:hover {
+  .menu {
+    display: flex;
+  }
+}
+
+.menu {
+  display: none;
+  justify-content: flex-end;
+}
+.menu a {
+  font-weight: 500;
+  font-size: 14px;
 }
 #main {
-  padding-block: 80px;
+  padding-block: clamp(2.5rem, 1.667rem + 4.17vw, 5rem);
 }
 .main {
   display: flex;
@@ -157,12 +183,11 @@ a {
 }
 
 .blog {
-    padding-block: 26px;
+  padding-block: 26px;
   display: flex;
   align-items: center;
   gap: 20px;
-  border-bottom:1px solid #E0E0E0;
-
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .blog-text {
@@ -196,35 +221,34 @@ a {
   color: #8695a4;
 }
 .blog-p {
-    width: 100%;
-    max-width: 594px;
-    min-height: 93px;
+  width: 100%;
+  max-width: 594px;
+  min-height: 93px;
 }
 .blog-p p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 #icon {
-    padding-top: 80px;
-    padding-bottom: 35px;
+  padding-top: 80px;
+  padding-bottom: 35px;
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
 }
 .icon-icon {
-    display: flex;
-    gap: 34px;
+  display: flex;
+  gap: 34px;
 }
 .icon a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #21243D;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #21243d;
 }
